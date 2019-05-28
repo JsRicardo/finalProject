@@ -1,0 +1,63 @@
+.main{
+    width: 980px;
+    margin: 50px auto;
+    font-size: 0;
+}  
+.left{
+    display: inline-block;
+    width: 480px;
+    margin-right: 80px;
+}
+.right{
+    display: inline-block;
+    width: 270px;
+    height: 283px;
+    vertical-align: top;
+    margin-top: 100px;
+    font-size: 14px;
+}
+.logo{
+    font-size: 26px;
+    color: #7a45e5;
+}
+.left img{
+    width: 480px;
+    height: 370px;
+}
+.right p{
+    font-size: 14px;
+    color: #666;
+}
+.forget{
+    font-size: 12px;
+    color: #7a45e5;
+    text-align: right;
+    display: block;
+    margin-top: 8px;
+}
+.login input{
+    width: 270px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    outline: none;
+    height: 40px;
+    padding: 5px 10px;
+}
+#pwd{
+    margin-top: 13px;
+}
+#login, #register{
+    margin-top: 13px;
+    background-color: #7a45e5;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.reg{
+    text-align: right;
+}
+.reg a{
+    color: #7a45e5
+}

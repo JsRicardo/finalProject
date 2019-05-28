@@ -1,0 +1,33 @@
+.mwrapper{
+  width: 800px;
+  margin:0 auto;
+}
+.abtop{
+  height:70px;
+  line-height: 70px;
+}
+.leftline{
+  border: 2px solid #ddd;
+  width: 260px;
+  display: inline-block;
+}
+.rightline{
+  border: 2px solid #ddd;
+  width: 260px;
+  display: inline-block;
+}
+.toptit{
+  font-size: 25px;
+  text-align: center;
+  display: inline-block;
+}
+.text{
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: blueviolet;
+  line-height: 24px;
+  text-indent: 30px;
+}
+.abbotm{
+  margin-top: 200px;
+}

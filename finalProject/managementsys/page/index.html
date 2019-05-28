@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OGO宠物国际后台管理系统</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./plugin/page.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/order.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <link rel="stylesheet" href="./css/type.css">
+  <link rel="stylesheet" href="./css/user.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="headerwrapper">
+      <div class="logo clear">
+        OGO 宠物国际
+      </div>
+      <div class="welcome clear">
+        欢迎您：<span class="adminName">{{admin}}</span>
+        <a href='#' class="logout">退出</a>
+      </div>
+
+    </div>
+
+  </header>
+  <div class="left">
+    <dl>
+      <dt>产品管理</dt>
+      <dd id="cententTable">产品列表</dd>
+      <dd id="typeTable">分类列表</dd>
+    </dl>
+    <dl>
+      <dt class="action">订单管理</dt>
+      <dd id="orderList">订单列表</dd>
+    </dl>
+    <dl>
+      <dt>用户管理</dt>
+      <dd id="customerList">客户列表</dd>
+      <dd id="adminList">管理员列表</dd>
+    </dl>
+
+  </div>
+  <div class="right">
+
+    <div class="zhezhao"></div>
+    <div class="firstPage">
+      <div class="ftop">
+        <div class="dleft">待发货订单数：<a href="#">3</a></div>
+        <div class="dright">已完成订单数：<a href="#">2</a></div>
+      </div>
+      <div class="fbom">欢迎进入</br>OGO宠物国际后台管理系统</div>
+    </div>
+    <!-- 产品列表 -->
+    <div class="cententTable">
+      <div class="proTableWrapper tableWrapper">
+        <div class="tableTop">
+          <button class="proList">产品列表</button>
+          <button class="hotpro">热门产品</button>
+          <button class="newpro">新增产品</button>
+          <button class="proDetail">产品详情</button>
+          <button class="updateHot">设为热门</button>
+          <button class="deleteHot">取消热门</button>
+        </div>
+        <table class="protable listtale" border="1" cellspacing="0" cellpadding="10" bordercolor="#fff">
+          <tbody>
+          </tbody>
+        </table>
+        <!-- 分页按钮 -->
+        <div id="productPage" class="page_div"></div>
+      </div>
+      <!-- 新增产品 -->
+      <div class="newProWrapper">
+        <div class="close"><span class="newproClose">X</span></div>
+        <table border="0">
+          <tr>
+            <td class="alignright">产品分类：</td>
+            <td>
+              <select class="type">
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="alignright">品牌：</td>
+            <td><input class="pinpai" type="text"></td>
+          </tr>
+          <tr>
+            <td class="alignright">名称：</td>
+            <td><input class="name" autocomplete="off" type="text"></td>
+          </tr>
+          <tr>
+            <td class="alignright">描述：</td>
+            <td><input class="desc" autocomplete="off" type="text"></td>
+          </tr>
+          <tr>
+            <td class="alignright">价格：</td>
+            <td><input class="price" autocomplete="off" type="text"></td>
+          </tr>
+          <tr>
+            <td class="alignright">老价格：</td>
+            <td><input class="oldprice" autocomplete="off" type="text"></td>
+          </tr>
+          <tr>
+            <td class="alignright">主要成分：</td>
+            <td><input class="chengfen" autocomplete="off" type="text"></td>
+          </tr>
+          <tr>
+            <td class="alignright">成分含量：</td>
+            <td><input class="hanliang" autocomplete="off" type="text"></td>
+          </tr>
+          <tr>
+            <td class="alignright">配方：</td>
+            <td><input class="peifang" autocomplete="off" type="text"></td>
+          </tr>
+          <form class='uploadImg' action="/uploadImg" method="post" enctype="multipart/form-data">
+            <tr>
+              <td class="alignright">图标图片：</td>
+              <td><input class="iconimg" type="file" name="iconImg"></td>
+            </tr>
+            <tr>
+              <td class="alignright">商品图片：</td>
+              <td><input class="proimgs" type="file" name="productImg" multiple></td>
+            </tr>
+            <tr>
+              <td class="alignright">详情图片</td>
+              <td><input class="detailimgs" type="file" name="detailImg" multiple></td>
+            </tr>
+            <tr>
+              <input class="productSubmit submit" type="submit" value="提 交">
+            </tr>
+          </form>
+        </table>
+      </div>
+      <!-- 产品详情 -->
+      <div class="productDetail">
+        <div class="close"><span class="proDetailClose">X</span></div>
+        <div class="toolBar"><input type="button" value="删除产品" class="deletePro"></div>
+        <div class="pinnerWrapper">
+          <table border="0"></table>
+          <div class="imgbox">
+            <div class="iconimg">
+              <span>图标图片：</span>
+              <div class="imgBox"></div>
+            </div>
+            <div class="bigimg">
+              <span>产品展图：</span>
+              <div class="imgBox"></div>
+            </div>
+            <div class="detailimg">
+              <span>详情图片：</span>
+              <div class="imgBox"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 分类列表 -->
+    <div class="typeTable">
+      <div class="typeTableWrapper tableWrapper">
+        <div class="tableTop">
+          <button class="newtype">新增分类</button>
+        </div>
+        <table class="typetable listtale" border="1" cellspacing="0" cellpadding="10" bordercolor="#fff">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <!-- 新增分类 -->
+      <div class="newType">
+        <div class="close"><span class="closeWindow">X</span></div>
+        <table border="0">
+          <tr>
+            <td class="alignright">分类名:</td>
+            <td><input type="text" class="typeName" autocomplete="off"></td>
+          </tr>
+        </table>
+        <input type="button" value="提 交" class="typeSubmit submit">
+      </div>
+    </div>
+    <!-- 订单列表 -->
+    <div class="orderList">
+      <div class="orderTableWrapper tableWrapper">
+        <table class="ordertable listtale" border="1" cellspacing="0" cellpadding="10" bordercolor="#fff">
+          <tbody>
+          </tbody>
+        </table>
+        <!-- 分页按钮 -->
+        <div id='orderPage' class="page_div"></div>
+      </div>
+
+      <!-- 订单详情 -->
+      <div class="orderDetail">
+        <div class="close"><span class="closeDetail">X</span></div>
+        <div class="fahuo"><input type="button" value="发 货" class="sendpro"></div>
+        <div class="detailInnerwrapper">
+          <div class="detailTop"></div>
+          <table class="detailTable listtale" border="1" cellspacing="0" cellpadding="10" bordercolor="#fff">
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- 客户列表 -->
+    <div class="customerList">
+      <div class="cusTableWrapper tableWrapper">
+        <div class="tableTop">
+          <button class="newtype">新增客户</button>
+        </div>
+        <table class="customertable listtale" border="1" cellspacing="0" cellpadding="10" bordercolor="#fff">
+          <tbody>
+          </tbody>
+        </table>
+        <!-- 分页按钮 -->
+        <div id="customerPage" class="page_div"></div>
+      </div>
+
+    </div>
+    <!-- 管理员列表 -->
+    <div class="adminList">
+      <div class="adminTableWrapper tableWrapper">
+        <div class="tableTop">
+          <button class="newAdmin">新增管理员</button>
+          <button class="deleteAdmin">删除管理员</button>
+        </div>
+        <table class="admintable listtale" border="1" cellspacing="0" cellpadding="10" bordercolor="#fff">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <!-- 新增管理员 -->
+      <div class="newAdminWrapper">
+        <div class="close"><span class="closeWindow">X</span></div>
+        <table border="0">
+          <tr>
+            <td class="alignright">管理员名:</td>
+            <td><input type="text" class="adName" autocomplete="off"></td>
+          </tr>
+          <tr>
+            <td class="alignright">密码:</td>
+            <td><input type="password" class="adminPwd" autocomplete="off"></td>
+          </tr>
+        </table>
+        <input type="button" value="提 交" class="adminSubmit submit">
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/product.js"></script>
+  <script src="./js/type.js"></script>
+  <script src="./js/order.js"></script>
+  <script src="./plugin/pageMe.js"></script>
+  <script src="./js/user.js"></script>
+</body>
+
+</html>

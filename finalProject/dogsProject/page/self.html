@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人中心</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/self.css">
+</head>
+
+<body>
+  <!-- 顶部条 -->
+  <div class="headTop">
+    <ul class="headertop">
+      <li class="login">
+        <a href="./login.html">登录</a>
+      </li>
+      <li class="regist">
+        <a href="./register.html">注册</a>
+      </li>
+      <a href="./self.html">
+        <li>个人中心</li>
+      </a>
+      <a href="./shopcar.html">
+        <li>购物车</li>
+      </a>
+      <a href="./about.html">
+        <li>关于我们</li>
+      </a>
+    </ul>
+  </div>
+  <!-- 搜索框 -->
+  <nav>
+    <div class="nav_wrapper">
+      <div class="logo">
+        <h2>OGO 宠物国际</h2>
+      </div>
+      <div class="search">
+        <input class="inptxt" type="text" placeholder="搜索 OGO宠物国际 商品/品牌">
+        <input class="sumbtn searchBtn" type="button" value="搜索">
+      </div>
+    </div>
+  </nav>
+  <div class="line"></div>
+
+  <!-- 主体部分             -->
+  <div class="mainbox">
+    <div class="left">
+
+      <div class="fone" id="fone">
+        <h1>个人信息</h1>
+        <form class="sign">
+          <p> 登录账户名：<input type="text" name="" id="username">
+          </p>
+          <p> 真实姓名：<input type="text" name="" id="realname">
+          </p>
+          <p> 手机号码：<input type="text" value="未绑定号码"></p>
+           <p> 邮 箱：<input type="text" value="未绑定邮箱"></p>
+        </form>
+      </div>
+      <div class="fthree" id="fthree">
+        <h1>收货地址</h1>
+        <div class="adress">+添加新地址</div>
+        <div class="zline"></div>
+        <div class="listWrapper">
+
+        </div>
+      </div>
+      <div class="ftwo" id="ftwo">
+        <h1>我的订单</h1>
+        <div class="orderListWrapper">
+
+          <div class="orderList">
+            <div class="listTop">
+              <div class="orderTime">下单时间：2019-05-04 15:03:38</div>
+              <div class="orderNum">订单编号：11161673</div>
+            </div>
+            <div class="listTable">
+              <div class="proName tr">
+                <div class="pLeft">
+                  <img src="./img/goods.jpg" alt="">
+                </div>
+                <div class="pright">
+                  <p class="pName">澳洲原装进口 灵动LINGDOK 袋鼠肉牛肉 中大型犬成犬粮 13.5KG</p>
+                  <div class="">X1</div>
+                </div>
+              </div>
+              <div class="uname tr">
+                Ricardo
+              </div>
+              <div class="pprice tr">￥635.00</div>
+              <div class="orderState tr">待付款</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="right">
+      <ul class="menuList">
+        <li><a href="#fone" class="active">个人信息</a></li>
+        <li><a href="#fthree">收货地址</a></li>
+        <li><a href="#ftwo" class="myorder">我的订单</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="addLocation">
+    <div class="topClose">
+      <span class="title clear">添加新收货地址</span>
+      <span class="closeWindow">x</span>
+    </div>
+    <table class="inpTable" border="0">
+      <tr>
+        <td class="floatR Ttitle">收货人：</td>
+        <td class="inpTd"><input class="inpBar realname" type="text"></td>
+      </tr>
+      <tr>
+        <td class="floatR Ttitle">城市：</td>
+        <td class="inpTd"><input class="inpBar city" type="text"></td>
+      </tr>
+      <tr>
+        <td class="floatR Ttitle">详细地址：</td>
+        <td class="inpTd"><input class="inpBar detailAddr" type="text"></td>
+      </tr>
+      <tr>
+        <td class="floatR Ttitle">手机号码：</td>
+        <td class="inpTd"><input class="inpBar phone" type="text"></td>
+      </tr>
+    </table>
+    <input type="checkbox" name="moren" id="moren"><label for="moren">设为默认地址</label>
+
+    <input type="button" value="保存收货地址" class="submitAddr">
+  </div>
+  <div class="updateLocation">
+    <div class="topClose">
+      <span class="title clear">修改收货地址</span>
+      <span class="closeupWindow">x</span>
+    </div>
+    <table class="inpTable" border="0">
+      <tr>
+        <td class="floatR Ttitle">收货人：</td>
+        <td class="inpTd"><input class="inpBar uprealname" type="text"></td>
+      </tr>
+      <tr>
+        <td class="floatR Ttitle">城市：</td>
+        <td class="inpTd"><input class="inpBar upcity" type="text"></td>
+      </tr>
+      <tr>
+        <td class="floatR Ttitle">详细地址：</td>
+        <td class="inpTd"><input class="inpBar updetailAddr" type="text"></td>
+      </tr>
+      <tr>
+        <td class="floatR Ttitle">手机号码：</td>
+        <td class="inpTd"><input class="inpBar upphone" type="text"></td>
+      </tr>
+    </table>
+    <input type="checkbox" name="upmoren" id="upmoren"><label for="upmoren">设为默认地址</label>
+
+    <input type="button" value="保存收货地址" class="updateAddr">
+  </div>
+  <div class="mask"></div>
+  <footer>
+    <div class="fwrapper">
+      <div class="fleft">
+        <div class="ftop">
+          <div class="flogo">
+            <h2>OGO宠物国际</h2>
+          </div>
+          <div class="ftel">
+            <P>售后电话：400-820-8820</P>
+            <p>服务时间：周一至周六 9:00-18:00</p>
+          </div>
+        </div>
+        <div class="fbottom">
+          <div class="fabout">
+            <ul class="clear">
+              <li>关于OGO宠物国际：</li>
+              <li>正品保障</li>
+              <li>极速发货</li>
+              <li>国内售后</li>
+            </ul>
+          </div>
+          <div class="fapiao">
+            <ul class="clear">
+              <li>关于OGO宠物国际：</li>
+              <li>正品保障</li>
+              <li>极速发货</li>
+              <li>国内售后</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy">
+          Copyright © 2019 epetht.com川ICP备17012853号-1营业执照
+        </div>
+      </div>
+      <div class="fright">
+        <img src="./img/code.jpg" alt="" class="code">
+        <p>扫一扫，享品质养宠生活</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/welcome.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./js/self.js"></script>
+</body>
+
+</html>

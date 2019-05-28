@@ -1,0 +1,223 @@
+/* 产品详情 */
+.productDetail {
+  width: 700px;
+  height: 500px;
+  border: 1px solid #2b223e;
+  box-shadow: 2px 2px 3px #2b223e;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -350px;
+  margin-top: -250px;
+  overflow: hidden;
+  display: none;
+}
+
+.toolBar {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.deletePro {
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  border: 1px solid #6a598c;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  background-color: #6a598c;
+  cursor: pointer;
+}
+
+.pinnerWrapper {
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-face-color: #6a598c;
+  scrollbar-width: 8px;
+  width: 700px;
+  height: 450px;
+}
+
+.productDetail table {
+  margin-top: 10px;
+  margin-left: 148px;
+  margin-bottom: 20px;
+}
+
+.imgbox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.imgBox {
+  display: inline-block;
+}
+
+.imgbox span {
+  font-size: 14px;
+  color: #000;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.imgbox img {
+  height: 100px;
+  width: 80px;
+  vertical-align: top;
+}
+
+.iconimg,
+.bigimg,
+.detailimg {
+  margin-top: 8px;
+}
+
+.newImg {
+  text-align: right;
+}
+
+.newImg input {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #6a598c;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.updataPro {
+  text-align: center;
+}
+
+.updataPro input {
+  border-radius: 5px;
+  background-color: #6a598c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.inputNewImg {
+  width: 400px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 1px solid #2b223e;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+  z-index: 4;
+  background-color: #fff;
+}
+
+.imgSubmit {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.inputNewImg table {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* 新增产品 */
+.newProWrapper {
+  width: 600px;
+  height: 550px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 3px #6a598c;
+  position: relative;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -300px;
+  display: none;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.newProWrapper table {
+  margin: 20px auto 0px;
+}
+
+.newProWrapper input {
+  height: 30px;
+  width: 250px;
+  font-size: 14px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid #251d35;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+input {
+  height: 30px;
+  width: 250px;
+  font-size: 14px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid #251d35;
+}
+
+
+.right .newProWrapper .submit {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: 300px;
+  margin-left: -150px;
+}
+
+.upwrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.type {
+  height: 30px;
+  width: 250px;
+  font-size: 14px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid #251d35;
+  outline: none;
+}
+
+.fahuo {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.fahuo input {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #6a598c;
+  padding: 0;
+  text-align: center;
+  border-radius: 5px;
+margin-right: 20px;
+cursor: pointer;
+}

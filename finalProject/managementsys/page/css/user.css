@@ -1,0 +1,36 @@
+/* 用户管理 */
+.customerList {
+  display: none;
+}
+
+.adminList {
+  display: none;
+}
+
+.newAdminWrapper {
+  display: none;
+  height: 250px;
+  width: 400px;
+  box-shadow: 2px 2px 3px #3d3d3d;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -125px;
+  z-index: 5;
+}
+
+.newAdminWrapper table {
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.newAdminWrapper table tr{
+  padding: 25px 0;
+}
+.adminSubmit{
+  left: 50%;
+  margin-left: -150px;
+  bottom: 45px;
+}

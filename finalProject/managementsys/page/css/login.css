@@ -1,0 +1,79 @@
+body {
+  background-image: url('../img/backgroundimg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+}
+.innerwrapper{
+  width: 890px;
+  margin: 150px auto;
+}
+.left{
+  display: inline-block;
+}
+.hello{
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #fff;
+}
+.job{
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.loginwrapper{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 10px;
+  width: 300px;
+  height: 330px;
+  vertical-align: top;
+  float: right;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.loginwrapper p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.loginwrapper span{
+  display: block;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #fff
+}
+.loginwrapper a{
+  font-size: 14px;
+  color: #7a45e5;
+  display: block;
+  text-align: right;
+  margin-bottom: 30px;
+}
+.loginwrapper input{
+  height: 40px;
+  width: 250px;
+  border: 1p solid rgba(255, 255, 255, .4);
+  padding: 5px 10px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+#login{
+  background-color: #7a45e5;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}

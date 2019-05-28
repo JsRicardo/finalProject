@@ -1,0 +1,345 @@
+.mainbox {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.left {
+  width: 1000px;
+}
+
+.fone, .ftwo, .fthree {
+  padding: 30px 10px;
+}
+
+.fone, .fthree {
+  border-bottom: 1px dotted #ddd;
+}
+
+.right {
+  position: fixed;
+  height: 500px;
+  width: 190px;
+  top: 300px;
+  right: 10px;
+  z-index: 2;
+}
+
+.left h1 {
+  border-top: 3px solid #67876778;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.sign {
+  margin: 30px 280px;
+}
+
+.sign p {
+  height: 60px;
+  line-height: 60px;
+  font-size: 15px;
+  width: 350px;
+  text-align: right;
+}
+
+.sign input {
+  height: 35px;
+  line-height: 35px;
+  color: #ddd;
+}
+
+.sign img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 110px;
+}
+
+.sex {
+  margin-left: -90px;
+}
+
+.sex input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.adress {
+  font-size: 15px;
+  color: #7a45e5;
+  background-color: #ddd;
+  width: 900px;
+  height: 35px;
+  line-height: 35px;
+  margin-left: 45px;
+  cursor: pointer;
+}
+
+.zline {
+  border: 1px solid #ddd;
+  box-shadow: #ddd;
+  margin: 10px 40px;
+}
+
+.address-list {
+  border: 1px solid #ddd;
+  width: 900px;
+  margin-left: 45px;
+}
+
+.address-list h2 {
+  padding: 8px 33px;
+  font-size: 14px;
+}
+
+.address-list span {
+  font-size: 18px;
+}
+.address-list p span{
+  font-size: 14px
+}
+.address-list p {
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+.address-list h2 label {
+  display: inline-block;
+  padding: 0 5px;
+  height: 20px;
+  line-height: 20px;
+  background: #f90;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.address-edit {
+  height: 34px;
+  line-height: 34px;
+  text-align: right;
+  background: #f3f3f3;
+  border-top: 1px solid #e5e5e5;
+}
+
+.address-edit span {
+  color: #038bb7;
+  margin-right: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ftwo h1 {
+  margin-bottom: 30px;
+}
+
+.orderList {
+  height: 149px;
+  width: 800px;
+  margin: 0px auto;
+}
+
+.listTop {
+  height: 40px;
+  background-color: #ddd;
+  border-top: 1px solid #999;
+}
+
+.orderTime, .orderNum {
+  display: inline-block;
+  margin-left: 20px;
+  color: #999;
+  line-height: 40px;
+}
+
+.listTable {
+  height: 109px;
+}
+
+.tr {
+  height: 100px;
+  display: inline-block;
+}
+
+.proName {
+  width: 300px;
+}
+
+.pLeft {
+  vertical-align: top;
+  display: inline-block;
+  line-height: 100px;
+}
+
+.pLeft img {
+  height: 70px;
+  width: 70px;
+  margin-top: 15px;
+}
+
+.pright {
+  display: inline-block;
+  height: 100px;
+  width: 220px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.pName {
+  font-size: 12px;
+  text-align: left;
+  line-height: 18px;
+}
+
+.pNum {
+  color: #f40;
+}
+
+.uname {
+  margin-left: 90px;
+  line-height: 100px;
+}
+
+.pprice {
+  color: #f40;
+  margin-left: 90px;
+}
+
+.orderState {
+  margin-left: 90px;
+}
+
+.fthree h1 {
+  margin-bottom: 30px;
+}
+
+.right ul li a {
+  height: 30px;
+  width: 80px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+}
+
+.active {
+  background-color: #999;
+  color: #fff;
+  position: relative;
+}
+
+.active::before {
+  content: '';
+  background-color: #999;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+body {
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.updateLocation,.addLocation {
+  position: fixed;
+  height: 500px;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  z-index: 4;
+  margin-left: -400px;
+  margin-top: -250px;
+  box-shadow: 2px 2px 3px #999;
+  display: none;
+}
+
+.mask {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.topClose {
+  background-color: #7a45e5;
+  text-align: right;
+  height: 50px;
+  line-height: 50px;
+}
+
+.topClose .closeWindow , .closeupWindow{
+  color: #fff;
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.title {
+  float: left;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.floatR {
+  text-align: right;
+  font-size: 16px;
+}
+
+.Ttitle {
+  width: 100px;
+}
+
+.inpTable {
+  margin: 50px auto 0px;
+}
+
+.inpTable tr {
+  height: 50px;
+}
+
+.inpTd {
+  width: 500px;
+  margin-left: 20px;
+}
+
+.inpBar {
+  height: 25px;
+  width: 400px;
+  padding: 5px 10px;
+}
+
+#upmoren, #moren {
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.updateAddr, .submitAddr {
+  display: block;
+  height: 50px;
+  width: 200px;
+  color: #fff;
+  background-color: #7a45e5;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-left: 300px;
+  margin-top: 40px;
+  cursor: pointer;
+}

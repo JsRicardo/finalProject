@@ -1,0 +1,74 @@
+/* 订单 */
+.orderList {
+  display: none;
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.orderDetail {
+  display: none;
+  width: 800px;
+  height: 500px;
+  margin-left: -400px;
+  margin-top: -250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px #2b223e;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.detailInnerwrapper {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.detailTop {
+  margin-top: 10px;
+}
+
+.state {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.morIm {
+  margin-top: 5px;
+}
+
+.orderNum {
+  font-size: 14px;
+}
+
+.orderNum,
+.monDate,
+.location {
+  font-size: 14px;
+  line-height: 24px;
+  height: 24px;
+}
+
+.monDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailTop span {
+  border-bottom: 1px solid #afb4b7;
+  margin-right: 10px;
+}
+
+.total span {
+  color: #f40;
+}
+
+.detailTable {
+  margin-top: 15px;
+}
